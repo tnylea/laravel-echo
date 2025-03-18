@@ -13,8 +13,5 @@ Route::get('/trigger-message', function () {
         ->as('test.message')
         ->with(['message' => 'Hello World'])
         ->send();
-    // \Log::info('Triggering TestMessage event');
-    // event(new TestMessage());
-    // return 'Message sent!';
     return 'message sent';
 });
